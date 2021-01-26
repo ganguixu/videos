@@ -5,6 +5,8 @@ import cn.ggx.dao.ToolsTypeItemDao;
 import cn.ggx.entity.ToolsItem;
 import cn.ggx.entity.ToolsType;
 import cn.ggx.util.ExcelUtils;
+import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +39,7 @@ public class ExcelTest {
             List<ToolsItem> toolsItems = toolsType.getToolsItems();
             if (toolsItems.size()>0) {
                 for (ToolsItem toolsItem : toolsItems) {
-                    Map<String, String> map = new HashMap<String, String>();
+                    Map<String, String> map = new HashMap<>();
                     map.put("id", String.valueOf(toolsType.getId()));
                     map.put("name", toolsType.getName());
                     map.put("flag", String.valueOf(toolsType.getFlag()));
