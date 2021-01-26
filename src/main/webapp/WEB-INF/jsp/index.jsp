@@ -33,7 +33,7 @@
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
         </ul>
-        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
+        <a href="/userByEmail" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
             href="#">注册</a>&nbsp;&nbsp;
         <a href="www.baidu.com">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clock"

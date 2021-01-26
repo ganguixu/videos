@@ -2,8 +2,8 @@ package cn.ggx.dao;
 
 import cn.ggx.entity.User;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public interface UserDao {
 
@@ -11,7 +11,9 @@ public interface UserDao {
 
     List<User> findUserAll();
 
-    List<User> findUserByEmail(HashMap<String, String> map);
+    List<User> findUserByEmail(Map<String, String> map);
+
+    List<User> findUserByIds(List<Integer> ids);
 
     int addUsers(List<User> list);
 
